@@ -4,11 +4,11 @@
 Test_NAME = "test"
 #movie_name = "CIMG3448.MOV"
 # Indicate the openMVG binary directory
-OPENMVG_SFM_BIN = "D:/OpenMVG/build64/Windows-AMD64-Release/Release"
-OPENMVG_MVS_BIN = "D:/OpenMVG/build64/Windows-AMD64-Debug/Debug"
+OPENMVG_SFM_BIN = "D:/OpenMVG/build64/Windows-AMD64-/Release"
+OPENMVG_MVS_BIN = "D:/OpenMVG/build64/Windows-AMD64-/Release"
 OPENMVG_MVS2_BIN = "D:/OpenMVS"
 # Indicate the openMVG camera sensor width directory
-CAMERA_SENSOR_WIDTH_DIRECTORY = "D:/OpenMVG/GIT/openMVG/src/openMVG/exif/sensor_width_database"
+CAMERA_SENSOR_WIDTH_DIRECTORY = "D:/OpenMVG/GIT/sfmmesh/openMVG/src/openMVG/exif/sensor_width_database"
 
 #import commands
 import os
