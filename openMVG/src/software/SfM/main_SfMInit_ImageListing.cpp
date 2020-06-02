@@ -337,7 +337,7 @@ int main(int argc, char **argv)
         
         
         // Handle case where focal length is equal to 0
-        if (exifReader->getFocal() == 0.0f)   //////////////////////////////////////////////////////////////////////////////////////////////////////////////// movie,filter: "!="  or image: "=="
+        if (exifReader->getFocal() != 0.0f)   //////////////////////////////////////////////////////////////////////////////////////////////////////////////// movie,filter: "!="  or image: "=="
         {
           error_report_stream
             << stlplus::basename_part(sImageFilename) << ": Focal length is missing." << "\n";
