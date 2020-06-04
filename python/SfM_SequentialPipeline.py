@@ -51,13 +51,13 @@ for line in iter(pIntrisics.stdout.readline,b''):
 pIntrisics.wait()
 
 print ("2. Compute features")
-pFeatures = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeFeatures"),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir, "-m", "AKAZE_FLOAT", "-n", "4"], stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+pFeatures = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeFeatures"),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir, "-m", "AKAZE_FLOAT", "-n", "8"], stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
 for line in iter(pFeatures.stdout.readline,b''):
     print(line.rstrip().decode("utf8"))
 pFeatures.wait()
 
 print ("3. Compute matches")
-pMatches = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeMatches"),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir, "-v", "1"], stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+pMatches = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeMatches"),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir, "-v", "10"], stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
 for line in iter(pMatches.stdout.readline,b''):
     print(line.rstrip().decode("utf8"))
 pMatches.wait()
