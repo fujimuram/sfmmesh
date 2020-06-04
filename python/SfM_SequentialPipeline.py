@@ -57,7 +57,7 @@ for line in iter(pFeatures.stdout.readline,b''):
 pFeatures.wait()
 
 print ("3. Compute matches")
-pMatches = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeMatches"),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir, "-v", "10"], stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+pMatches = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeMatches"),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir], stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
 for line in iter(pMatches.stdout.readline,b''):
     print(line.rstrip().decode("utf8"))
 pMatches.wait()

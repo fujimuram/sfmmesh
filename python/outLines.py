@@ -1,7 +1,7 @@
 import cv2
 from glob import glob
 
-IMAGE_PATH = "./images/net_model"
+IMAGE_PATH = "./images/net_model_69"
 
 for file in glob(IMAGE_PATH + '/*.jpg'):
     img = cv2.imread(file)
