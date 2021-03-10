@@ -1,0 +1,24 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh visible="1" label="scene_dense_reduction3_voxel_0.001000_4.ply" filename="scene_dense_reduction3_voxel_0.001000_4.ply">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption wireColor="64 64 64 255" solidColor="192 192 192 255" pointColor="131 149 69 255" pointSize="3" boxColor="234 234 234 255" wireWidth="1">000110010000000000000000000000000000000010100000000100111010110000101101</RenderingOption>
+  </MLMesh>
+  <MLMesh visible="1" label="new_points.ply" filename="new_points.ply">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption wireColor="64 64 64 255" solidColor="192 192 192 255" pointColor="255 0 0 255" pointSize="15" boxColor="234 234 234 255" wireWidth="1">000110000000000000000000000000000000000010100000000100111011110000101101</RenderingOption>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup/>
+</MeshLabProject>
